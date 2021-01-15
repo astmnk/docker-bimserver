@@ -6,7 +6,7 @@ To run the server:
 
 After the server is up and running go to http://localhost:8080
 
-Configure the server and install the <a href="https://drive.google.com/drive/folders/1gSif9dYDnPtezxtt1eN6YayPPCDTdofU?usp=sharing">plugins</a> manually before finishing the setup process.</br>
+Configure the server and install the <a href="https://github.com/astmnk/docker-bimserver/raw/main/bimserver_1.5.138_plugins.zip">plugins</a> manually before finishing the setup process.</br>
 It's recommended to configure the mail server so you can activate the admin account otherwise you will have problems logging in from OpenMAINT/CMDBuild.</br>
 If you don't want to configure the mail server, request a reset password form bimvie.ws <b>(using username: admin@bimserver.org password: admin)</b> so you can find the activation link from the logs located in /usr/local/tomcat/webapps/ROOT/WEB-INF/logs/bimserver.log
 
