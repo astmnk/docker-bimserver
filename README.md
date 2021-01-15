@@ -16,7 +16,7 @@ then type command:
 
 <b>cat webapps/ROOT/WEB-INF/logs/bimserver.log</b>
 
-and you will find something like: 
+you will find something like: </br>
 <i>
 You or someone else has requested your password to be reset, please click the following link to choose a new password: http://localhost:8080/apps/bimviews/?page=ResetPassword&username=admin@bimserver.org&uoid=131074&validationtoken=54C3D15EDEAA5FAA9AEC13210BE5E7F5
 </i>
