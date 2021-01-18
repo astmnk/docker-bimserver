@@ -13,7 +13,7 @@ RUN set -x \
 	&& cp ROOT.war $BIMSERVER_APP \
 	&& rm ROOT.war 	
 
-ENV BIM_SITE_ADDRESS="http://localhost:8080/bimserver" \
+ENV BIM_SITE_ADDRESS="http://localhost:8080" \
 	BIM_SMTP_SERVER="fakesmtp.example.org" \
 	BIM_SMTP_SENDER="fake.sender@example.org" \
 	BIM_ADMIN_NAME="Admin User" \
