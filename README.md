@@ -1,12 +1,11 @@
-# BIMserver 1.5.138 
-Used with OpenMAINT 2.1 and CMDBuild 3.3
+# BIMserver 1.5.162 
 
 To run the server:
-<b>docker run -it --name bimserver -p 8080:8080 asti/bimserver:1.5.138</b>
+<b>docker run -it --name bimserver -p 8080:8080 asti/bimserver:1.5.162</b>
 
 After the server is up and running go to http://localhost:8080
 
-Configure the server and install the <a href="https://github.com/astmnk/docker-bimserver/raw/main/bimserver_1.5.138_plugins.zip">plugins</a> manually before finishing the setup process.</br>
+Configure the server and install the <a href="https://github.com/astmnk/docker-bimserver/raw/main/bimserver_1.5.162_plugins.zip">plugins</a> manually before finishing the setup process.</br>
 It's recommended to configure the mail server so you can activate the admin account otherwise you will have problems logging in from OpenMAINT/CMDBuild.</br>
 If you don't want to configure the mail server, request a reset password form bimvie.ws <b>(using username: admin@bimserver.org password: admin)</b> so you can find the activation link from the logs located in /usr/local/tomcat/webapps/ROOT/WEB-INF/logs/bimserver.log
 
