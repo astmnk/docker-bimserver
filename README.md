@@ -1,13 +1,18 @@
-# BIMserver 1.5.162 
+# BIMserver image
+
+1. BIMserver version 1.5.162 <b>docker pull asti/bimserver:1.5.162</b>
+2. BIMserver version 1.5.138 <b>docker pull asti/bimserver:1.5.138</b>
 
 To run the server:
-<b>docker run -it --name bimserver -p 8080:8080 asti/bimserver:1.5.162</b>
+<b>docker run -it --name bimserver -p 8080:8080 asti/bimserver:[version tag you choose]</b>
 
 After the server is up and running go to http://localhost:8080
 
-Configure the server and install the <a href="https://github.com/astmnk/docker-bimserver/raw/main/bimserver_1.5.162_plugins.zip">plugins</a> manually before finishing the setup process.</br>
-It's recommended to configure the mail server so you can activate the admin account otherwise you will have problems logging in from OpenMAINT/CMDBuild.</br>
-If you don't want to configure the mail server, request a reset password form bimvie.ws <b>(using username: admin@bimserver.org password: admin)</b> so you can find the activation link from the logs located in /usr/local/tomcat/webapps/ROOT/WEB-INF/logs/bimserver.log
+(<b>Important!</b>)
+First time run - If you run into problems installing the BIMserver plugins from internet, configure the server and install the plugins  <b>manually</b> (using <a href="https://github.com/astmnk/docker-bimserver/raw/main/bimserver_1.5.162_plugins.zip">1.5.162</a> or <a href="https://github.com/astmnk/docker-bimserver/raw/main/bimserver_1.5.138_plugins.zip">1.5.138</a> - based on the version of bimserver) before finishing the setup process.</br>
+
+(If used with OpenMAINT) It's recommended to configure the mail server so you can activate the admin account otherwise you will have problems logging in from OpenMAINT/CMDBuild.</br>
+If you don't want to configure the mail server, request a reset password form <a href='http://localhost:8080/apps/bimviews/'>bimviews</a> <i>(using username and password from the first setup page)</i> so you can find the activation link from the logs located in /usr/local/tomcat/webapps/ROOT/WEB-INF/logs/bimserver.log
 
 <b>docker exec -it bimserver /bin/bash</b>
 
