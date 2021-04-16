@@ -18,7 +18,7 @@ docker run -it -e JAVA_OPTS='-Xmx4g' -v <local fodler path>:/usr/local/bimserver
 After the server is up and running go to http://localhost:8080
 
 (<b>Important!</b>)
-First time run - If you run into problems installing the BIMserver plugins from internet, configure the server and install the plugins  <b>manually</b> (using <a href="https://github.com/astmnk/docker-bimserver/raw/main/bimserver_1.5.162_plugins.zip">1.5.162</a> or <a href="https://github.com/astmnk/docker-bimserver/raw/main/bimserver_1.5.138_plugins.zip">1.5.138</a> - based on the version of bimserver) before finishing the setup process.</br>
+First time run - If you run into problems installing the BIMserver plugins from internet, configure the server and install the plugins  <b>manually</b> (using <a href="https://raw.githubusercontent.com/astmnk/docker-bimserver/e0d84c3f95527ee92c5c5554a5b7dd34a2d5a208/bimserver_1.5.162_plugins.zip">1.5.162</a> or <a href="https://raw.githubusercontent.com/astmnk/docker-bimserver/e0d84c3f95527ee92c5c5554a5b7dd34a2d5a208/bimserver_1.5.138_plugins.zip">1.5.138</a> - based on the version of bimserver) before finishing the setup process.</br>
 
 (If used with OpenMAINT - BIMserver 1.5.138) It's recommended to configure the mail server so you can activate the admin account otherwise you will have problems logging in from OpenMAINT/CMDBuild.</br>
 If you don't want to configure the mail server, request a reset password form <a href='http://localhost:8080/apps/bimviews/'>bimviews</a> <i>(using username and password from the first setup page)</i> so you can find the activation link from the logs located in /usr/local/bimserver/home/logs/bimserver.log
