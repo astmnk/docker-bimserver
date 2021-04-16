@@ -3,8 +3,17 @@
 1. BIMserver version 1.5.162 <b>docker pull asti/bimserver:1.5.162</b>
 2. BIMserver version 1.5.138 <b>docker pull asti/bimserver:1.5.138</b>
 
-To run the server:
-<b>docker run -it --name bimserver -p 8080:8080 asti/bimserver:[version tag you choose]</b>
+### Run the server:
+
+BIMserver 1.5.138
+```
+docker run -it -e JAVA_OPTS='-Xmx4g' --name bimserver -p 8080:8080 asti/bimserver:1.5.138
+```
+BIMserver 1.5.162
+```
+docker run -it -e JAVA_OPTS='-Xmx4g' -v <local fodler path>:/usr/local/bimserver/home -p 8080:8080 --name bimserver asti/bimserver:1.5.162
+```
+
 
 After the server is up and running go to http://localhost:8080
 
@@ -26,3 +35,24 @@ You or someone else has requested your password to be reset, please click the fo
 </i>
 
 Copy the activation link and reset/activate the admin user.
+
+### Build image from Dockerfile (Bimserver 1.5.162)
+Instructions:
+- Build image:
+```
+docker build -t asti/bimserver:1.5.162 .
+```
+
+- Run container:
+```
+Note: <local fodler path> - path in you local machine
+```
+
+```
+docker run -it -e JAVA_OPTS='-Xmx4g' -v <local fodler path>:/usr/local/bimserver/home -p 8080:8080 --name bimserver <bimserver image name>
+```
+example:
+```
+docker run -it --rm -v /home/bimserver_home:/usr/local/bimserver/home -p 8080:8080 --name bimserver asti/bimserver:1.5.162
+```
+
