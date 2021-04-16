@@ -9,6 +9,10 @@ RUN rm -rf $CATALINA_HOME/webapps/examples
 ENV BIMSERVER_APP $CATALINA_HOME/webapps/
 ENV BIMSERVER_WAR_URL https://github.com/opensourceBIM/BIMserver/releases/download/v1.5.162/bimserverwar-1.5.162.war
 
+RUN apt-get update -y && \
+    apt-get upgrade -y && \
+    apt-get clean
+
 RUN set -x \
 	&& wget "$BIMSERVER_WAR_URL" -O ROOT.war \	
 	&& cp ROOT.war $BIMSERVER_APP \
