@@ -1,4 +1,5 @@
-FROM tomcat:9.0.31-jdk11-openjdk
+
+FROM tomcat:9.0.45-jdk11-openjdk-buster
 
 WORKDIR $CATALINA_HOME 
 
